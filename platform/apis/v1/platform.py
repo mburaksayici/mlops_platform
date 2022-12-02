@@ -13,6 +13,7 @@ class PlatformDriver:
     def setup(self, app) -> None:
         """
         FastAPI setup on exceptions and tokens.
+        # TO DO : Add token https://fastapi.tiangolo.com/tutorial/security/first-steps/
         """
         pass
 

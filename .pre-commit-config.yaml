@@ -38,4 +38,6 @@ repos:
     hooks:
     -   id: mypy
         additional_dependencies: [types-all]
-        exclude: ^testing/resources/
+        args:
+          - "--namespace-packages"
+          - "--explicit-package-bases"

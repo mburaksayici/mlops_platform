@@ -26,4 +26,7 @@ class ModelDriver:
         with the app instance and user configuration.
         """
         # run uvicorn server.
-        uvicorn.run(app, port=self.api_config.MODELDRIVER_PORT, host='0.0.0.0')
+        uvicorn.run(
+            app, port=self.api_config.MODELDRIVER_PORT,
+            host=self.api_config.HOST,
+        )

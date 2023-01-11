@@ -11,6 +11,7 @@ class APIConfig:
     """API Configurations"""
     PLATFORM_PORT = 8000
     MODELDRIVER_PORT = 8001
+    HOST = '0.0.0.0'
 
 
 class MongoConfig:

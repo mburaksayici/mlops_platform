@@ -26,4 +26,7 @@ class PlatformDriver:
         with the app instance and user configuration.
         """
         # run uvicorn server.
-        uvicorn.run(app, port=self.api_config.PLATFORM_PORT, host='0.0.0.0')
+        uvicorn.run(
+            app, port=self.api_config.PLATFORM_PORT,
+            host=self.api_config.HOST,
+        )

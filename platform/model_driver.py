@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from apis import PlatformDriver
+from apis import ModelDriver
 from fastapi import APIRouter
 from fastapi import FastAPI
 
@@ -10,10 +10,10 @@ app = FastAPI()
 
 def main():
     # create fastapi application
-    platform_driver = PlatformDriver()
-    platform_driver.setup(app)
-    platform_driver.register_router(app)
-    platform_driver.run(app)
+    model_driver = ModelDriver()
+    model_driver.setup(app)
+    model_driver.register_router(app)
+    model_driver.run(app)
 
 
 if __name__ == '__main__':

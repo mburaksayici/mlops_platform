@@ -8,7 +8,7 @@ import importlib
 from platform.base import ModelProtocol
 
 
-class ModelDriver:
+class ModelEngine:
     def __init__(self):
         pass
 
@@ -17,6 +17,8 @@ class ModelDriver:
         self.user_model = importlib.import_module(model_path)
         assert isinstance(self.user_model, ModelProtocol)
 
-    def run(self, image_urls):
+    def setup(self):
+        self.user_model.load()
 
+    def predict(self, image_urls):
         pass

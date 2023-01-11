@@ -10,6 +10,7 @@ load_dotenv('.env.docker')
 class APIConfig:
     """API Configurations"""
     PLATFORM_PORT = 8000
+    MODELDRIVER_PORT = 8001
 
 
 class MongoConfig:
